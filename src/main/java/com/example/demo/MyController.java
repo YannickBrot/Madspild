@@ -20,4 +20,9 @@ public class MyController {
     public String about(){
         return ("About");
     }
+
+    @GetMapping("/YourHelp")
+    public String yourHelp (){
+        return ("YourHelp");
+    }
 }
