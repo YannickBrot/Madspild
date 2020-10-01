@@ -3,4 +3,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.news-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #74ff58;
+    color: white;
+}
