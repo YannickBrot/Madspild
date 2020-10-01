@@ -16,19 +16,66 @@
     <a href="/About">Om os</a>
 </div>
 
+<!-- Infomation card -->
+<div class="center-card">
+    <h3>
+        Præcis hvor meget mad spilder vi i Danmark?
+    </h3>
+    <p>
+        Læs nedenunder hvor meget mad vi danskere har spildt indtil videre i år.
+    </p>
+    <img src="/Images/madspild.jpg" alt="madspild" style="width: 100%">
+</div>
+
 <!-- Column 1 -->
 <div class="column">
-<h1 th:text="${totalWaste}"/>
+    <div class="card">
+
+        <h3>
+            Samlet dansk madspild i år.
+        </h3>
+
+        <h1 th:text="${totalWaste}"> ton.</h1>
+        <h1>ton.</h1>
+
+        <p>Så meget mad har danskere smidt ud i år indtil videre.</p>
+
+    </div>
 </div>
+
 
 <!-- Column 2 -->
 <div class="column">
-<h1 th:text="${householdWaste}"/>
+    <div class="card";>
+
+        <h3>
+            Gennemsnitlig madspild pr. dansker i år.
+        </h3>
+
+        <h1 th:text="${personWaste}"/>
+        <h1>kilo.</h1>
+
+        <p>
+            Så meget spiselig mad har den gennemsnitlige dansker smidt ud i år indtil videre.
+        </p>
+
+    </div>
 </div>
 
 <!-- Column 3 -->
 <div class="column">
-<h1 th:text="${personWaste}"/>
+    <div class="card">
+
+        <h3>
+            Samlet madspild i de danske husholdninger i år.
+        </h3>
+
+        <h1 th:text="${householdWaste}"/>
+        <h1>ton.</h1>
+
+        <p>Så meget mad har de danske husholdninger smidt ud i år indtil videre.</p>
+
+    </div>
 </div>
 
 </body>
