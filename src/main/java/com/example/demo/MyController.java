@@ -13,7 +13,7 @@ public class MyController {
 
     @GetMapping("/News")
     public String news(){
-        return ("News");
+        return ("News2");
     }
 
     @GetMapping("/About")
