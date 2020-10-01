@@ -14,7 +14,8 @@ public class MyController {
     public String home(Model model){
         model.addAttribute("totalWaste",wasteCalculator.totalWasteThisYearInTons());
         model.addAttribute("householdWaste", wasteCalculator.householdsCombinedWasteThisYearInTons());
-        model.addAttribute("personWaste", wasteCalculator.averagePersonWasteThisYearInGrams());
+        model.addAttribute("personWaste", wasteCalculator.averagePersonWasteThisYearInKG());
+        model.addAttribute("currentYear", wasteCalculator.getCurrentYear());
         return ("Home");
     }
 

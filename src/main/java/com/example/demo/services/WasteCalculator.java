@@ -6,16 +6,20 @@ public class WasteCalculator {
     LocalDate now = LocalDate.now();
     int daysSinceNewYear = now.getDayOfYear();
 
-    public double totalWasteThisYearInTons(){
-        return daysSinceNewYear*1917.8;
+    public int totalWasteThisYearInTons(){
+        return (int) Math.round(daysSinceNewYear*1917.8);
     }
 
-    public double householdsCombinedWasteThisYearInTons(){
-        return daysSinceNewYear*712.3;
+    public int householdsCombinedWasteThisYearInTons(){
+        return (int) Math.round(daysSinceNewYear*712.3);
     }
 
-    public double averagePersonWasteThisYearInGrams(){
-        return daysSinceNewYear*128.7;
+    public int averagePersonWasteThisYearInKG(){
+        return (int) Math.round((daysSinceNewYear*128.7)/1000);
+    }
+
+    public int getCurrentYear(){
+        return now.getYear();
     }
 
 }
