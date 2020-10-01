@@ -11,7 +11,7 @@ public class MyController {
         return ("Home");
     }
 
-    @GetMapping("/News")
+    @GetMapping("/News2")
     public String news(){
         return ("News2");
     }
