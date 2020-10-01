@@ -12,6 +12,7 @@ html {
     width: 33.3%;
 }
 
+<<<<<<< HEAD
 .card {
     text-align: center;
     box-shadow: 2px 4px 8px #8fea5f;
@@ -28,6 +29,8 @@ html {
     margin-top: 50px;
 }
 
+=======
+>>>>>>> origin/master
 *, *:before, *:after {
     box-sizing: inherit;
 }
