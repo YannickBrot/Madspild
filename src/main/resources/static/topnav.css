@@ -13,7 +13,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
 }
 
 /* Change the color of links on hover */
@@ -27,3 +27,11 @@
     background-color: #8fea5f;
     color: white;
 }
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 28px;
+    max-width: 250px;
+}
+

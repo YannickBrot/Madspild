@@ -1,13 +1,20 @@
-package com.example.demo;
+package com.example.demo.controller;
 
+import com.example.demo.services.WasteCalculator;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MyController {
+    WasteCalculator wasteCalculator = new WasteCalculator();
 
     @GetMapping("/")
-    public String home(){
+    public String home(Model model){
+        model.addAttribute("totalWaste",wasteCalculator.totalWasteThisYearInTons());
+        model.addAttribute("householdWaste", wasteCalculator.householdsCombinedWasteThisYearInTons());
+        model.addAttribute("personWaste", wasteCalculator.averagePersonWasteThisYearInGrams());
         return ("Home");
     }
 

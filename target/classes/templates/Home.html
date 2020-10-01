@@ -1,19 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type= "text/css" href="/topnav.css">
+    <link rel="stylesheet" type= "text/css" href="/home.css">
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Stop madspild!</title>
 </head>
 <body>
+
+<!-- Navigation bar -->
 <div class="topnav">
-    <a class="active" href="/">Home</a>
+    <a class="active" href="/">Hjem</a>
     <a href="/News2">Nyheder</a>
     <a href="/YourHelp">Hvad kan du gøre?</a>
     <a href="/About">Om os</a>
-
 </div>
 
-Hello world
+<!-- Column 1 -->
+<div class="column">
+<h1 th:text="${totalWaste}"/>
+</div>
+
+<!-- Column 2 -->
+<div class="column">
+<h1 th:text="${householdWaste}"/>
+</div>
+
+<!-- Column 3 -->
+<div class="column">
+<h1 th:text="${personWaste}"/>
+</div>
+
 </body>
 </html>
