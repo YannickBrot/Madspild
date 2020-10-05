@@ -21,5 +21,4 @@ public class WasteCalculator {
     public int getCurrentYear(){
         return now.getYear();
     }
-
 }
