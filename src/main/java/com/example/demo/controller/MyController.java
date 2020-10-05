@@ -4,7 +4,6 @@ import com.example.demo.services.WasteCalculator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MyController {
@@ -37,31 +36,31 @@ public class MyController {
     //Artikler
     @GetMapping("/one")
     public String one (){
-        return ("one");
+        return ("news/one");
     }
 
     @GetMapping("/two")
     public String two (){
-        return ("two");
+        return ("news/two");
     }
 
     @GetMapping("/three")
     public String three (){
-        return ("three");
+        return ("news/three");
     }
 
     @GetMapping("/four")
     public String four (){
-        return ("four");
+        return ("news/four");
     }
 
     @GetMapping("/five")
     public String five (){
-        return ("five");
+        return ("news/five");
     }
 
     @GetMapping("/six")
     public String six (){
-        return ("six");
+        return ("news/six");
     }
 }
